@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background..css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bb.bloodbank.HelloController">
+   <children>
+      <Label layoutX="229.0" layoutY="31.0" text="Blood Request Form" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_R_firstname" layoutX="80.0" layoutY="118.0" style="-fx-background-color: #ffffcc;" />
+      <TextField fx:id="tf_R_email" layoutX="80.0" layoutY="173.0" style="-fx-background-color: #ffffcc;" />
+      <TextField fx:id="tf_R_lastname" layoutX="363.0" layoutY="118.0" style="-fx-background-color: #ffffcc;" />
+      <TextField fx:id="tf_R_phonenumber" layoutX="363.0" layoutY="173.0" style="-fx-background-color: #ffffcc;" />
+      <Label layoutX="80.0" layoutY="102.0" text="First Name" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="102.0" text="Last Name" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="154.0" text="Email" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="154.0" text="Phone Number" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_R_bloodgroup" layoutX="80.0" layoutY="227.0" prefHeight="25.0" prefWidth="172.0" promptText="(AB+,A+,B+,O+,AB-,A-,B-,O-)" style="-fx-background-color: #ffffcc;" />
+      <TextField fx:id="tf_R_age" layoutX="363.0" layoutY="227.0" style="-fx-background-color: #ffffcc;" />
+      <Label layoutX="80.0" layoutY="210.0" text="Blood Group" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="210.0" text="Age" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="btn_submit_request" layoutX="277.0" layoutY="297.0" mnemonicParsing="false" onAction="#switchScenewithsubmitrequest" style="-fx-cursor: hand;" text="Submit">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="bt_back" layoutX="283.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchScenewithback" style="-fx-cursor: hand;" text="BACK">
+         <font>
+            <Font name="MS Gothic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

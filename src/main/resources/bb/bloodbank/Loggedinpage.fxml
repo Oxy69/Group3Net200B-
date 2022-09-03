@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background..css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bb.bloodbank.HelloController">
+   <children>
+      <Button fx:id="btn_logout" layoutX="274.0" layoutY="319.0" mnemonicParsing="false" onAction="#switchSceneLogoutpage" style="-fx-cursor: hand;" text="Logout!">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_patient" layoutX="277.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchScenepatientpage" style="-fx-background-color: #cc0033; -fx-cursor: hand;" text="Patient">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="233.0" layoutY="28.0" text="Welcome back !" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_donor" layoutX="278.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchScenedonorpage" style="-fx-background-color: #99cc66; -fx-cursor: hand;" text="Donor">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="263.0" layoutY="116.0" text="REGISTER" textFill="#efe1e1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

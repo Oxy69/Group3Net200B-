@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background..css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bb.bloodbank.HelloController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resume.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="211.0" layoutY="229.0" text="Password" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_password" layoutX="280.0" layoutY="225.0" style="-fx-background-color: #ffffcc;" />
+      <Label layoutX="163.0" layoutY="262.0" text="Confirm Password" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_password" layoutX="280.0" layoutY="258.0" style="-fx-background-color: #ffffcc;" />
+      <Label layoutX="211.0" layoutY="194.0" text="Staff ID" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_staffid" layoutX="280.0" layoutY="190.0" style="-fx-background-color: #ffffcc;" />
+      <Button fx:id="btn_signup" layoutX="266.0" layoutY="369.0" mnemonicParsing="false" onAction="#switchScenewithsignupbutton" style="-fx-background-color: #0066cc; -fx-cursor: hand;" text="Sign Up !" textFill="#1f0202">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_cancel" layoutX="273.0" layoutY="410.0" mnemonicParsing="false" onAction="#switchScenemnpage" style="-fx-background-color: #ff0033; -fx-cursor: hand;" text="Cancel" textFill="#1f0202">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="206.0" layoutY="294.0" text="First Name" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_firstname" layoutX="280.0" layoutY="290.0" style="-fx-background-color: #ffffcc;" />
+      <Label layoutX="207.0" layoutY="328.0" text="Last Name" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_lastname" layoutX="280.0" layoutY="324.0" style="-fx-background-color: #ffffcc;" />
+   </children>
+</AnchorPane>

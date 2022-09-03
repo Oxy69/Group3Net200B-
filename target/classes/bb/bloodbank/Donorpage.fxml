@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: \@bloodbank;" styleClass="bodybg" stylesheets="@background..css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bb.bloodbank.HelloController">
+   <children>
+      <Label layoutX="219.0" layoutY="21.0" text="Blood Donation Form" textFill="#fbeded">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_D_firstname" layoutX="70.0" layoutY="108.0" />
+      <TextField fx:id="tf_D_email" layoutX="70.0" layoutY="163.0" />
+      <TextField fx:id="tf_D_lastname" layoutX="353.0" layoutY="108.0" />
+      <TextField fx:id="tf_D_phonenumber" layoutX="353.0" layoutY="163.0" />
+      <Label layoutX="70.0" layoutY="92.0" text="First Name" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="353.0" layoutY="92.0" text="Last Name" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="70.0" layoutY="144.0" text="Email" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="353.0" layoutY="144.0" text="Phone Number" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_D_bloodgroup" layoutX="70.0" layoutY="217.0" prefHeight="25.0" prefWidth="172.0" promptText="(AB+,A+,B+,O+,AB-,A-,B-,O-)" />
+      <TextField fx:id="tf_D_age" layoutX="353.0" layoutY="217.0" />
+      <Label layoutX="70.0" layoutY="200.0" text="Blood Group" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="353.0" layoutY="200.0" text="Age" textFill="#fbeded">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="btn_submit_donor" layoutX="273.0" layoutY="291.0" mnemonicParsing="false" onAction="#switchScenewithsubmitdonor" style="-fx-cursor: hand;" text="Submit">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_back" layoutX="277.0" layoutY="331.0" mnemonicParsing="false" onAction="#switchScenewithback" prefHeight="17.0" prefWidth="48.0" style="-fx-cursor: hand;" text="BACK">
+         <font>
+            <Font name="MS Gothic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
